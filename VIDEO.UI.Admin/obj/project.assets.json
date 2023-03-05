@@ -1,0 +1,100 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "VIDEO.common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/VIDEO.common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VIDEO.common.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "VIDEO.common/1.0.0": {
+      "type": "project",
+      "path": "../VIDEO.common/VIDEO.common.csproj",
+      "msbuildProject": "../VIDEO.common/VIDEO.common.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "VIDEO.common >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\varul\\.nuget\\packages\\": {},
+    "E:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\0 - Programmering\\ITHS\\SQL\\Entity Framework\\VIDEO\\VIDEO.UI.Admin\\VIDEO.UI.Admin.csproj",
+      "projectName": "VIDEO.UI.Admin",
+      "projectPath": "D:\\0 - Programmering\\ITHS\\SQL\\Entity Framework\\VIDEO\\VIDEO.UI.Admin\\VIDEO.UI.Admin.csproj",
+      "packagesPath": "C:\\Users\\varul\\.nuget\\packages\\",
+      "outputPath": "D:\\0 - Programmering\\ITHS\\SQL\\Entity Framework\\VIDEO\\VIDEO.UI.Admin\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "E:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\varul\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "D:\\0 - Programmering\\ITHS\\SQL\\Entity Framework\\VIDEO\\VIDEO.common\\VIDEO.common.csproj": {
+              "projectPath": "D:\\0 - Programmering\\ITHS\\SQL\\Entity Framework\\VIDEO\\VIDEO.common\\VIDEO.common.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "VIDEO.UI.Admin/1.0.0": {
+        "dependencies": {
+          "VIDEO.common": "1.0.0"
+        },
+        "runtime": {
+          "VIDEO.UI.Admin.dll": {}
+        }
+      },
+      "VIDEO.common/1.0.0": {
+        "runtime": {
+          "VIDEO.common.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "VIDEO.UI.Admin/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "VIDEO.common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
