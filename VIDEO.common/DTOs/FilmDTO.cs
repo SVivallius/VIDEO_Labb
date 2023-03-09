@@ -6,9 +6,7 @@ public class FilmDTO
     public string Description { get; set; }
     public DateTime CreatedDate { get; set; }
     public string Url { get; set; }
-    public string EmbedString { get; set; }
     public int DirectorId { get; set; }
-    public DirectorDTO Director { get; set; }
-    public List<GenreDTO> Genres { get; set; }
+    public List<int> GenreIds { get; set; }
     public bool free { get; set; }
 }

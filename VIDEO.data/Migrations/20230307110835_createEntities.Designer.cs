@@ -12,8 +12,8 @@ using VIDEO.Membership.data.Context;
 namespace VIDEO.Membership.data.Migrations
 {
     [DbContext(typeof(VideoDbContext))]
-    [Migration("20230305130327_CreateColumn")]
-    partial class CreateColumn
+    [Migration("20230307110835_createEntities")]
+    partial class createEntities
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -76,11 +76,6 @@ namespace VIDEO.Membership.data.Migrations
 
                     b.Property<int>("DirectorId")
                         .HasColumnType("int");
-
-                    b.Property<string>("EmbedString")
-                        .IsRequired()
-                        .HasMaxLength(511)
-                        .HasColumnType("nvarchar(511)");
 
                     b.Property<string>("Title")
                         .IsRequired()

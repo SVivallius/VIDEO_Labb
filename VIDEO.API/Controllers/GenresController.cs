@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.Text.Json;
 using VIDEO.common.DTOs;
 
 
@@ -18,13 +19,15 @@ public class GenresController : ControllerBase
 
     // GET: api/<GenresController>
     [HttpGet]
-    public async Task<IResult> Get()
+    public async Task<List<GenreDTO>> Get()
     {
         _db.Include<Film>();
 
         var entities = await _db.GetAllAsync<Genre, GenreDTO>();
-        if (entities == null) return Results.BadRequest();
-        return Results.Ok(entities);
+        //if (entities == null) return Results.BadRequest();
+
+        //return Results.Ok(entities);
+        return entities;
     }
 
     // GET api/<GenresController>/5

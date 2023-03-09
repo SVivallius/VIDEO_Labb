@@ -1,12 +1,12 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
-using System;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
 namespace VIDEO.Membership.data.Migrations
 {
     /// <inheritdoc />
-    public partial class CreateColumn : Migration
+    public partial class createEntities : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -47,7 +47,6 @@ namespace VIDEO.Membership.data.Migrations
                     Description = table.Column<string>(type: "nvarchar(1024)", maxLength: 1024, nullable: false),
                     CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Url = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: false),
-                    EmbedString = table.Column<string>(type: "nvarchar(511)", maxLength: 511, nullable: false),
                     DirectorId = table.Column<int>(type: "int", nullable: false),
                     free = table.Column<bool>(type: "bit", nullable: false)
                 },

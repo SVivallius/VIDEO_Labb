@@ -1,4 +1,5 @@
-﻿using System.Diagnostics.CodeAnalysis;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.Diagnostics.CodeAnalysis;
 
 namespace VIDEO.Membership.data.Entities;
 public class Film : IEntity
@@ -11,8 +12,6 @@ public class Film : IEntity
     public DateTime CreatedDate { get; set; }
     [MaxLength(255), Required]
     public string Url { get; set; }
-    [MaxLength(511), Required]
-    public string EmbedString { get; set; }
     [AllowNull]
     public int DirectorId { get; set; }
     [AllowNull]

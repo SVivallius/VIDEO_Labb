@@ -74,11 +74,6 @@ namespace VIDEO.Membership.data.Migrations
                     b.Property<int>("DirectorId")
                         .HasColumnType("int");
 
-                    b.Property<string>("EmbedString")
-                        .IsRequired()
-                        .HasMaxLength(511)
-                        .HasColumnType("nvarchar(511)");
-
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasMaxLength(50)

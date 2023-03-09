@@ -25,7 +25,6 @@ public class FilmsController : ControllerBase
         try
         {
             _db.Include<Director>();
-            _db.Include<Genre>();
 
             var entities = freeOnly ?
                 await _db.GetFilteredAsync<Film, FilmDTO>(e => e.free == freeOnly) :
@@ -48,7 +47,7 @@ public class FilmsController : ControllerBase
         var entity = await _db.GetByIdAsync<Film, FilmDTO>(e => e.Id == id);
 
         if (entity == null) return Results.NotFound(id);
-        if (entity.free == freeOnly) return Results.Unauthorized();
+        if (entity.free == false || freeOnly == true) return Results.Unauthorized();
 
         return Results.Ok(entity);
     }

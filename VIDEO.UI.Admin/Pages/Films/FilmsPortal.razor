@@ -1,0 +1,19 @@
+﻿@inject AdminService service
+<h3>FilmsPortal</h3>
+
+<ul>
+    @foreach (var DTO in Model)
+    {
+        <li>
+            <h1>@DTO.Title</h1>
+        </li>
+    }
+</ul>
+
+@code {
+    public List<FilmDTO> Model = new();
+    protected override async Task OnInitializedAsync()
+    {
+        Model = await service.GetAsync<FilmDTO>($"films?freeOnly=false");
+    }
+}
